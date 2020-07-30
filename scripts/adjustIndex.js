@@ -21,6 +21,7 @@ window.onresize = function() {
     }
     height = height + 35;
     document.getElementById("emptydiv").style.height = height + "px";
+    document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
 }
 
 window.onload = function() {
@@ -45,4 +46,5 @@ window.onload = function() {
     }
     height = height + 35;
     document.getElementById("emptydiv").style.height = height + "px";
+    document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
 }
