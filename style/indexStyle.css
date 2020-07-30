@@ -3,6 +3,7 @@
     height: auto;
     position: fixed;
     left: 0;
+    opacity: .8;
 }
 
 .background_image_overlay {
@@ -10,8 +11,15 @@
     height: 100%;
     position: fixed;
     left: 0;
+    top: 60px;
     background-color:rgba(85, 172, 238, .3);
     z-index: 1;
+}
+
+.index_image_cover {
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
 
 .index_title_div {
@@ -25,13 +33,7 @@
     font-family: Helvetica;
     font-weight: lighter;
     color:white; 
-    font-size:80px; 
+    font-size:80px;
     text-shadow:1px 1px 15px #000;
     margin: 0px;
-}
-
-@media (max-width: 400px) {
-    .index_title {
-        width: auto;
-    }
 }
