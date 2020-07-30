@@ -18,8 +18,9 @@ window.onresize = function() {
         document.getElementById("title").style.fontSize = "80px";
         document.getElementById("typingtext").setAttribute("style", "font-size:50px");
         document.getElementById("typingtext").style.fontSize = "50px";
-
     }
+    height = height + 35;
+    document.getElementById("emptydiv").style.height = height + "px";
 }
 
 window.onload = function() {
@@ -42,4 +43,6 @@ window.onload = function() {
         document.getElementById("typingtext").style.fontSize = "50px";
 
     }
+    height = height + 35;
+    document.getElementById("emptydiv").style.height = height + "px";
 }
