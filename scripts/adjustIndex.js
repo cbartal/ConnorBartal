@@ -9,6 +9,7 @@ window.onload = function() {
     backgroundFormat();
     styleSocialMedia();
     riverImageFix();
+    removeLoadingScreen();
 }
 
 function removeLoadingScreen() {
@@ -36,8 +37,6 @@ function backgroundFormat() {
     height = height + 35;
     document.getElementById("emptydiv").style.height = height + "px";
     document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
-
-    removeLoadingScreen();
 }
 
 function styleSocialMedia() {
