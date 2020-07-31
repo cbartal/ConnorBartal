@@ -97,3 +97,34 @@
 .paragraphText {
     font-size: 15px;
 }
+
+
+.grad_slider {
+    background-color: #55ACEE;
+    position:absolute;
+    top:61%;
+    left:96%;
+    width:500px;
+    height:200px;
+    z-index:100;
+    transition-duration:1s;
+    border:solid;
+    border-width:3px;
+    border-color:white;
+    border-top-left-radius:2%;
+    border-bottom-left-radius:2%;
+}
+.grad_slider:hover {
+    transition-duration:1s;
+    transform:translateX(-400px);
+}
+
+.verticle_text {
+    transform: rotate(90deg);
+    transform-origin: top left 0;
+    position: absolute;
+    top: -32%;
+    left: 10%;
+    font-size: 45px;
+    color: #333232;
+}

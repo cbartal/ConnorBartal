@@ -11,6 +11,10 @@ window.onload = function() {
     riverImageFix();
 }
 
+function removeLoadingScreen() {
+    document.getElementById("loadingScreen").style.visibility = "hidden";
+}
+
 function backgroundFormat() {
     var image = document.getElementById("background_image");
     var height = image.height;
@@ -33,6 +37,7 @@ function backgroundFormat() {
     document.getElementById("emptydiv").style.height = height + "px";
     document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
 
+    removeLoadingScreen();
 }
 
 function styleSocialMedia() {

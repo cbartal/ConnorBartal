@@ -167,35 +167,6 @@ textarea {
     color: #55ACEE;
 }
 
-.grad_slider {
-    background-color: #55ACEE;
-    position:absolute;
-    top:61%;
-    left:96%;
-    width:500px;
-    height:200px;
-    z-index:100;
-    transition-duration:1s;
-    border:solid;
-    border-width:3px;
-    border-color:white;
-    border-top-left-radius:2%;
-    border-bottom-left-radius:2%;
-}
-.grad_slider:hover {
-    transition-duration:1s;
-    transform:translateX(-400px);
-}
-
-.verticle_text {
-    transform: rotate(90deg);
-    transform-origin: top left 0;
-    position: absolute;
-    top: 1%;
-    left: 10%;
-    font-size: 45px;
-    color: #333232;
-}
 
 .about_me_text{
     color:white;
@@ -337,5 +308,30 @@ textarea {
     width:30%
 }
 
+.loadingScreen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333232;
+    color: #333232;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    vertical-align: middle;
+}
 
+.loadBox {
+    width: 100px;
+    height: 100px;
+    color: #55ACEE;
+    background-color: #55ACEE;
+    position: relative;
+    top: 50%;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
 
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
