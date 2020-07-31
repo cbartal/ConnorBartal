@@ -46,16 +46,6 @@ textarea {
         transform: rotate(360deg); /* Generic */
     }
 
-.home-social-roll {
-    color: white;
-    vertical-align:middle;
-    margin:22px;
-    transition-duration: 1s;
-}
-    .home-social-roll:hover {
-        color: #292F33;
-        transform: translateY(-20px);
-    }
 
 .spotify_social {
     color: white;

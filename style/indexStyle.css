@@ -45,9 +45,55 @@
     border-bottom: solid;
     border-width: 5px;
     border-color: white;
-    margin: auto
+    vertical-align: middle;
 }
 
-.indexBottomTable {
+
+.home-social-roll {
+    color: white;
+    vertical-align: middle;
+    transition-duration: 1s;
+}
+    .home-social-roll:hover {
+        color: #292F33;
+        transform: translateY(-20px);
+    }
+
+.riverImage {
+    width: 95%;
+    color: white;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: 5px;
+}
+
+.sociallife {
+    color: black;
+    background-color: white;
+    width: 65%;
+}
+
+.wrapper {
     width: 100%;
+    overflow: auto; /* add this to contain floated children */
+    background-color: #333232;
+}
+.first {
+    width: 35%;
+    float:left; /* add this */
+}
+.second {
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    float: left; /* add this */
+    background-color: #333232;
+    position: inherit;
+}
+
+.whitetext {
+    color: white;
+}
+
+.paragraphText {
+    font-size: 15px;
 }
