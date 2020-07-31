@@ -1,5 +1,3 @@
-
-
 window.onresize = function() {
     var image = document.getElementById("background_image");
     var height = image.height;
@@ -12,8 +10,7 @@ window.onresize = function() {
         document.getElementById("title").style.fontSize = "30px";
         document.getElementById("typingtext").setAttribute("style", "font-size:15px");
         document.getElementById("typingtext").style.fontSize = "15px";
-    }
-    else {
+    } else {
         document.getElementById("title").setAttribute("style", "font-size:80px");
         document.getElementById("title").style.fontSize = "80px";
         document.getElementById("typingtext").setAttribute("style", "font-size:50px");
@@ -22,6 +19,9 @@ window.onresize = function() {
     height = height + 35;
     document.getElementById("emptydiv").style.height = height + "px";
     document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
+
+    styleSocialMedia();
+
 }
 
 window.onload = function() {
@@ -36,8 +36,7 @@ window.onload = function() {
         document.getElementById("title").style.fontSize = "30px";
         document.getElementById("typingtext").setAttribute("style", "font-size:15px");
         document.getElementById("typingtext").style.fontSize = "15px";
-    }
-    else {
+    } else {
         document.getElementById("title").setAttribute("style", "font-size:80px");
         document.getElementById("title").style.fontSize = "80px";
         document.getElementById("typingtext").setAttribute("style", "font-size:50px");
@@ -47,4 +46,18 @@ window.onload = function() {
     height = height + 35;
     document.getElementById("emptydiv").style.height = height + "px";
     document.getElementById("emptydiv").setAttribute("style", "height:" + height + "px");
+    styleSocialMedia();
+}
+
+
+function styleSocialMedia() {
+    var width = window.innerWidth / 13;
+    var x = document.getElementsByClassName("home-social-roll");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.width = width + "px";
+        x[i].style.margin = (width / 3) + "px";
+        //x[i].setAttribute("style", "width:" + width + "px");
+        //x[i].setAttribute("style", "margin:" + (width / 3) + "px");
+    }
 }
