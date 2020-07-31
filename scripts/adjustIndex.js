@@ -57,7 +57,5 @@ function styleSocialMedia() {
     for (i = 0; i < x.length; i++) {
         x[i].style.width = width + "px";
         x[i].style.margin = (width / 3) + "px";
-        //x[i].setAttribute("style", "width:" + width + "px");
-        //x[i].setAttribute("style", "margin:" + (width / 3) + "px");
     }
 }
