@@ -15,12 +15,13 @@
     </div>
 
     <link rel="stylesheet" type="text/css" href="style/headerStyle.css">
+    <script src="scripts/dropdownTouch.js"></script>
     <!-- HEADER CODE -->
     <div class="dropdown">
-        <button class="dropbtn">
+        <button onclick="makeTouchScreenWork()" class="dropbtn">
             Menu
         </button>
-        <div class="dropdown-content">
+        <div id="submenu" class="dropdown-content">
             <a href="#" class="active">Home</a>
             <a href="#">Education</a>
             <a href="#">Work Experience</a>

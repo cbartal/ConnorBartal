@@ -7,23 +7,18 @@
     <title>Contact</title>
 </head>
 <link rel="stylesheet" type="text/css" href="../style/site.css">
-<script src="../scripts/adjustIndex.js"></script>
 
 <body style="background-color: #333232;">
 
 
-    <!--LOADING SCREEN
-    <div id="loadingScreen" class="loadingScreen" align="center">
-        <div id="loadBox" class="loadBox"></div>
-    </div>
--->
     <link rel="stylesheet" type="text/css" href="../style/headerStyle.css">
+    <script src="../scripts/dropdownTouch.js"></script>
     <!-- HEADER CODE -->
     <div class="dropdown">
-        <button class="dropbtn">
-        Menu
-    </button>
-        <div class="dropdown-content">
+        <button onclick="makeTouchScreenWork()" class="dropbtn">
+            Menu
+        </button>
+        <div id="submenu" class="dropdown-content">
             <a href="index.html">Home</a>
             <a href="#">Education</a>
             <a href="#">Work Experience</a>
