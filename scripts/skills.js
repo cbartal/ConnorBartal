@@ -18,8 +18,10 @@ function upperPhoto() {
         document.getElementById("skillsText").setAttribute("style", "width:90%");
 
         //new image
+        fullImage.style.position = "absolute";
         fullImage.style.visibility = "";
         fullImage.style.width = (window.innerWidth - 10) + "px";
+        fullImage.style.top = (skillDiv.offsetTop + skillDiv.clientHeight + 10) + "px";
         //fullImage.setAttribute("style", "visibility: ");
         //fullImage.setAttribute("style", "width: " + (window.innerWidth - 10) + "px");
     }
