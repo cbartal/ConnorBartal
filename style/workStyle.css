@@ -22,6 +22,7 @@
 }
 
 .barOne {
+    overflow: hidden;
     background-color: #55ACEE;
     border-color: white;
     color:white;
@@ -29,7 +30,7 @@
     border-top: solid;
     border-width: 5px;
     width: 100%;
-    vertical-align: middle;
+    height: 300px;
 }
 
 .work_image_niwc {
